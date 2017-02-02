@@ -1,0 +1,27 @@
+{
+  "name": "javascript-exercises",
+  "version": "0.0.1",
+  "description": "Javascript exercises for fun and learning some things",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanMaRuiz/javascript-exercises.git"
+  },
+  "keywords": [
+    "mocha",
+    "javascript"
+  ],
+  "author": "JuanMa Ruiz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JuanMaRuiz/javascript-exercises/issues"
+  },
+  "homepage": "https://github.com/JuanMaRuiz/javascript-exercises#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
