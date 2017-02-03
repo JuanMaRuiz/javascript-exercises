@@ -13,11 +13,11 @@ I've extracted the exercises from:
 ```
 .
 │
-├── test                   # Unit tests files (`.test.js`)
+├── test                     # Unit tests files (`.test.js`)
 │     └── ...-test.js
-├── 01-{name}              # JS Modules -> solutions
-│     └── README.md        # Exercise explanation
-│
+├── 01-{name}                # JS Modules -> solutions
+│     └── README.md          # Exercise explanation
+│     └── {module-name}.md   # Exercise implementation
 │
 ├─ .editorconfig
 ├─ .gitignore
