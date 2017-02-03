@@ -10,6 +10,7 @@ I've extracted the exercises from:
 * http://www.w3resource.com/javascript-exercises/
 
 ### Project structure
+```
 .
 │
 ├── test                   # Unit tests files (`.test.js`)
@@ -22,6 +23,7 @@ I've extracted the exercises from:
 ├─ .gitignore
 ├─ package.json
 ├─ REAMDE.md
+```
 
 ### How to run test
 * Download the project
