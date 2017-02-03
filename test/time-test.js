@@ -2,7 +2,7 @@ const assert = require('assert');
 const chai = require('chai');
 const expect = chai.expect;
 
-const timeOne = require('./../tests-modules/time-exercise-1');
+const timeOne = require('./../01-time/time');
 
 describe('Basic JS tests', function() {
   describe('Write a JavaScript program to display the current day in the following format.', function() {

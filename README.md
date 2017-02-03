@@ -22,3 +22,8 @@ I've extracted the exercises from:
 ├─ .gitignore
 ├─ package.json
 ├─ REAMDE.md
+
+### How to run test
+* Download the project
+* Download dependencies ```npm install```
+* Run tests ```npm test```
