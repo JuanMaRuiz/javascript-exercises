@@ -1,7 +1,9 @@
+// Core dependencies
 const assert = require('assert');
 const chai = require('chai');
 const expect = chai.expect;
 
+// Test dependencies
 const timeOne = require('./../01-time/time');
 
 describe('Basic JS tests', function() {
