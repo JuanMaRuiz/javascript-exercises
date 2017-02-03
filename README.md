@@ -22,7 +22,7 @@ I've extracted the exercises from:
 ├─ .editorconfig
 ├─ .gitignore
 ├─ package.json
-├─ REAMDE.md
+├─ README.md
 ```
 
 ### How to run test
