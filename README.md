@@ -15,7 +15,7 @@ I've extracted the exercises from:
 │
 ├── test                   # Unit tests files (`.test.js`)
 │     └── ...-test.js
-├── test-modules           # JS solutions
+├── 01-{name}              # JS Modules -> solutions
 │     └── README.md        # Exercise explanation
 │
 │
