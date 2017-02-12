@@ -5,28 +5,45 @@ const assert = require('assert'),
 
 // Test modules
 const StringsFn = require('./../03-coderbyte-easy/string-reverse');
-const Firstfactorial = require('./../03-coderbyte-easy/first-factorial');
+const getResult = require('./../03-coderbyte-easy/first-factorial');
 
 describe('First reverse', function(){
     describe('Write a function firstReverse(str) take the str parameter being passed and return the string in reversed order', function() {
-        it('should return "sredoC dna dlroW olleH" when function revice "Hello World and Coders"', function() {
-            const str = 'Hello World and Coders';
-            StringsFn.firstReverse(str);
-            expect(StringsFn.firstReverse(str)).to.be.equal("sredoC dna dlroW olleH");
-        });
-        it('should return "edoC evoL I" when function revice "I Love Code"', function() {
-            const str = 'I Love Code';
-            StringsFn.firstReverse(str);
-            expect(StringsFn.firstReverse(str)).to.be.equal("edoC evoL I");
+        let strings = [
+            {
+                original: 'Hello World and Coders',
+                expected: 'sredoC dna dlroW olleH'
+            },
+            {
+                original: 'I Love Code',
+                expected: 'edoC evoL I'
+            }
+        ];
+
+        strings.forEach(function(str) {
+            it('should return "' + str.expected + '" when function reverse "' + str.original + '"', function() {
+                expect(StringsFn.firstReverse(str.original)).to.be.equal(str.expected);
+            });
         });
     });
 });
 
 describe('Frist Factorial', function(){
     describe('Write a  function FirstFactorial(num) take the num parameter being passed and return the factorial of it', function() {
-        it("should return 24 (4 * 3 * 2 * 1) if num = 4", function() {
-            let num = 4;
-            expect(Firstfactorial.getFactorial(num)).to.be.equal(24);
+        let numbers = [
+            {
+                original: 4,
+                expected: 24
+            },
+            {
+                original: 8,
+                expected: 40320
+            }
+        ];
+      numbers.forEach(function(num) {
+        it('it should return: ' + num.expected + ' when the function receive: ' + num.original , function() {
+          expect(getResult.getFactorial(num.original)).to.be.equal(num.expected);
         });
+      });
     });
 });

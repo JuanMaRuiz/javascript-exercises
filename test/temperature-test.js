@@ -9,16 +9,25 @@ const Temperature = require('./../02-temperature/temperature');
 // More examples http://www.rapidtables.com/convert/temperature/how-celsius-to-fahrenheit.htm
 
 describe('Write a JavaScript program to convert temperatures to and from celsius, fahrenheit', function() {
-    it('should return 60°C is 140 °F', function() {
-        let temp = Temperature.celsiusToFahrenheit(60);
-        expect(temp).to.be.equal('140 °F');
-    });
-    it('should return -50°C is -58 °F', function() {
-        let temp = Temperature.celsiusToFahrenheit(-50);
-        expect(temp).to.be.equal('-58 °F');
-    });
-    it('should return 60°C is 140 °F', function() {
-        let temp = Temperature.celsiusToFahrenheit(60);
-        expect(temp).to.be.equal('140 °F');
+    var temperatures = [
+        {
+            celsius: 60,
+            expected: 140
+        },
+        {
+            celsius: -50,
+            expected: -58
+        },
+        {
+            celsius: 400,
+            expected: 752
+        }
+      ];
+
+    temperatures.forEach(function(temperature) {
+        it('should return ' + temperature.celsius + '°C is ' + temperature.expected + ' °F', function() {
+            let temp = Temperature.celsiusToFahrenheit(temperature.celsius);
+            expect(temp).to.be.equal(temperature.expected + ' °F');
+        });
     });
 })

@@ -1,14 +1,16 @@
 'use strict';
 
-module.exports.getFactorial = function(number) {
-    let numArr = [];
-    for(let i = 1; i <= number; i++) {
-        numArr.push(i);
+module.exports.getFactorial = function(num) {
+    let arr = [],
+        result;
+
+    for(let i = 1; i <= num; i++) {
+        arr.push(i);
     }
 
-    let result = numArr.reduce(function(prev, current) {
-        return prev * current;
+    result = arr.reduce(function(current, next) {
+        return current * next;
     });
-
     return result;
-}
+
+};
