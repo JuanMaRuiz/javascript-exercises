@@ -5,6 +5,7 @@ const assert = require('assert'),
 
 // Test modules
 const StringsFn = require('./../03-coderbyte-easy/string-reverse');
+const Firstfactorial = require('./../03-coderbyte-easy/first-factorial');
 
 describe('First reverse', function(){
     describe('Write a function firstReverse(str) take the str parameter being passed and return the string in reversed order', function() {
@@ -23,6 +24,9 @@ describe('First reverse', function(){
 
 describe('Frist Factorial', function(){
     describe('Write a  function FirstFactorial(num) take the num parameter being passed and return the factorial of it', function() {
-
+        it("should return 24 (4 * 3 * 2 * 1) if num = 4", function() {
+            let num = 4;
+            expect(Firstfactorial.getFactorial(num)).to.be.equal(24);
+        });
     });
 });

@@ -8,8 +8,8 @@ const timeOne = require('./../01-time/time');
 
 describe('Basic JS tests', function() {
   describe('Write a JavaScript program to display the current day in the following format.', function() {
-   it('should return => Today is : Friday', function() {
-    expect(timeOne.getDate()).to.be.equal('Today is : Friday');
+   it('should return => Today is : Sunday', function() {
+    expect(timeOne.getDate()).to.be.equal('Today is : Sunday');
    });
 
   });

@@ -4,9 +4,10 @@
  * @return {String} - Formatted string with current day
  */
 module.exports.getDate = function () {
-  const weekDays = ['Monday', 'Tuesday', 'Wenesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+  const weekDays = ['Sunday', 'Monday', 'Tuesday', 'Wenesday', 'Thursday', 'Friday', 'Saturday'],
         today = new Date();
-  var day = today.getUTCDay() - 1;
+  var day = today.getDay();
+  console.log('day: ', day);
   return 'Today is : ' + weekDays[day];
 };
 
