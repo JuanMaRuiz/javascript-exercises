@@ -8,7 +8,7 @@ module.exports.getDate = function () {
         today = new Date();
   var day = today.getDay();
   console.log('day: ', day);
-  return 'Today is : ' + weekDays[day];
+  return 'Today is : ' + weekDays[day] + 1;
 };
 
 module.exports.checkFormattedTime = function (time) {

@@ -1,3 +1,4 @@
+https://travis-ci.org/JuanMaRuiz/javascript-exercises.png?branch=master
 Javascript Exercises
 ====================
 
