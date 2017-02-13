@@ -1,16 +1,5 @@
 'use strict';
 
-/*
- * @return {String} - Formatted string with current day
- */
-module.exports.getDate = function () {
-  const weekDays = ['Sunday', 'Monday', 'Tuesday', 'Wenesday', 'Thursday', 'Friday', 'Saturday'],
-        today = new Date();
-  var day = today.getDay();
-  console.log('day: ', day);
-  return 'Today is : ' + weekDays[day] + 1;
-};
-
 module.exports.checkFormattedTime = function (time) {
   const pattern = /[0-9]\s[a-zA-Z]{2}\s:\s[0-5][0-9]\s:\s[0-5][0-9]/;
 
