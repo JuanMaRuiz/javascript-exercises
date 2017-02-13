@@ -1,6 +1,4 @@
-
-
-# psi [![Build Status](https://travis-ci.org/JuanMaRuiz/javascript-exercises.png?branch=master)](https://travis-ci.org/JuanMaRuiz/javascript-exercises)
+[![Build Status](https://travis-ci.org/JuanMaRuiz/javascript-exercises.png?branch=master)](https://travis-ci.org/JuanMaRuiz/javascript-exercises)
 Javascript Exercises
 ====================
 
