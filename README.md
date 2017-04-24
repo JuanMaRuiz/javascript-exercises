@@ -9,6 +9,9 @@ I've extracted the exercises from:
 * https://coderbyte.com/challenges
 * http://www.w3resource.com/javascript-exercises/
 
+### TODO
+* More exercises [here](http://www.w3resource.com/javascript-exercises/javascript-functions-exercises.php)
+
 ### Project structure
 ```
 .
