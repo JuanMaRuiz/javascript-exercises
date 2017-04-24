@@ -7,12 +7,6 @@ const expect = chai.expect;
 const timeOne = require('./../01-time/time');
 
 describe('Basic JS tests', function() {
-  describe('Write a JavaScript program to display the current day in the following format.', function() {
-   it('should return => Today is : Friday', function() {
-    expect(timeOne.getDate()).to.be.equal('Today is : Friday');
-   });
-
-  });
   describe('Write a JavaScript program to display the current time in the following format', function() {
     it('should return the current time with this format: 4 PM : 50 : 22', function() {
     var time = timeOne.getTime();
