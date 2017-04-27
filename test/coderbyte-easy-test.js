@@ -1,3 +1,4 @@
+'use strict';
 // Core dependencies
 const assert = require('assert'),
       chai = require('chai'),
