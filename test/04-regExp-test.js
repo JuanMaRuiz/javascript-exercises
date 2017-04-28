@@ -31,20 +31,20 @@ describe('Validation with regular expression', function() {
             expect(regExp.checkCreditCardFormat(creditCard)).to.equal("The credit card number is NOT correct");
         })
     });
-    describe('Write a pattern that matches e-mail addresses.', function() {
+    // describe('Write a pattern that matches e-mail addresses.', function() {
 
-        it('should return: "The email card number is correct"', function() {
-            const creditCard = 'ruizjuanma@gmail.com';
-            expect(regExp.checkCreditCardFormat(creditCard)).to.equal("The email card number is correct");
-        });
+    //     it('should return: "The email card number is correct"', function() {
+    //         const creditCard = 'ruizjuanma@gmail.com';
+    //         expect(regExp.checkCreditCardFormat(creditCard)).to.equal("The email card number is correct");
+    //     });
 
-        it('should return: "The email card number is NOT correct"', function() {
-            const creditCard = 'ruizj9'
-            expect(regExp.checkCreditCardFormat(creditCard)).to.equal("The email card number is NOT correct");
-        })
-        it('should return: "The email card number is NOT correct"', function() {
-            const creditCard = 'ruizj@gmiñ'
-            expect(regExp.checkCreditCardFormat(creditCard)).to.equal("The email card number is NOT correct");
-        })
-    });
+    //     it('should return: "The email card number is NOT correct"', function() {
+    //         const creditCard = 'ruizj9'
+    //         expect(regExp.checkCreditCardFormat(creditCard)).to.equal("The email card number is NOT correct");
+    //     })
+    //     it('should return: "The email card number is NOT correct"', function() {
+    //         const creditCard = 'ruizj@gmiñ'
+    //         expect(regExp.checkCreditCardFormat(creditCard)).to.equal("The email card number is NOT correct");
+    //     })
+    // });
 });
