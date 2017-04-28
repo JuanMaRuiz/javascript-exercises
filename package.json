@@ -1,7 +1,7 @@
 {
   "name": "javascript-exercises",
-  "version": "0.0.1",
-  "description": "Javascript exercises for fun and learning some things",
+  "version": "1.0.0",
+  "description": "Javascript exercises for fun and learn some things",
   "main": "index.js",
   "scripts": {
     "test": "mocha"

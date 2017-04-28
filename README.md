@@ -22,7 +22,7 @@ I've extracted the exercises from:
 │     └── ...-test.js
 ├── 01-{name}                # JS Modules -> solutions
 │     └── README.md          # Exercise explanation
-│     └── {module-name}.md   # Exercise implementation
+│     └── {module-name}.js   # Exercise implementation
 │
 ├─ .editorconfig
 ├─ .gitignore
@@ -30,7 +30,19 @@ I've extracted the exercises from:
 ├─ README.md
 ```
 
-### How to run test
+### How to run tests
 * Download the project
 * Download dependencies ```npm install```
 * Run tests ```npm test```
+
+If you want to launch a single test you can use two approaches:
+*Using ```npm test```*
+For passing params to ```npm test``` script you need to execute the script with ```run``` and pass params to script test. This is the pattern to use:
+```
+$ npm run test -- --grep=<test to launch>
+```
+*Using ```mocha``` directly*
+You only need to add the ```grep``` flag and put in quotes the test you want to execute. Example:
+```mocha --grep 'test to launch'```
+
+> Remember to put your 'test to launch' between quotes if it has not a single word as a name.
