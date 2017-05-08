@@ -2,10 +2,10 @@
 
 'use strict';
 
-module.exports.checkLowerCase = function(pass) {
-  const regExpLowerCase = /[a-z]{1,}/;
+module.exports.checkCase = function(pass) {
+  const regExpCase = /([a-z]{1,}[A-Z]{1,})|([A-Z]{1,}[a-z]{1,})/;
 
-  return checkRegExp(pass, regExpLowerCase);
+  return checkRegExp(pass, regExpCase);
 };
 
 module.exports.checkNumber = function(pass) {
@@ -27,9 +27,17 @@ module.exports.checkPass = function(pass) {
 };
 
 module.exports.checkFullPass = function(pass) {
-    const passRegExp = /[0-9]{1,}[a-z]{1,}[A-Z]{1,}/;
+    const regExpArr = [/\d{1,}/, /[a-z]{1,}/, /[a-z]{1,}/, /([$]{1,})|([#]{1,})|([@]{1,})/],
+        passLength = pass.length >= 6 && pass.length <= 16;
+    let results = [];
 
-    return checkRegExp(pass, passRegExp) && pass.length >= 6 && pass.length <= 16;
+    for(let i = 0; i < regExpArr.length; i++) {
+        results.push(checkRegExp(pass, regExpArr[i]));
+    }
+
+    return results.filter(function(value) {
+        return value === false;
+    }).length === 0;
 };
 
 module.exports.checkLength = function(pass) {
