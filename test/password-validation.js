@@ -20,10 +20,26 @@ describe('Password Checker', function(){
     it('should be at least a length of 6 chareacter as minumum and 16 as maximun', function() {
         let pass = 'Bz8E#d';
         expect(PassValidator.checkLength(pass)).to.be.true;
-    })
-    // it('should contains at least 1 character from [$#@]', function(){
-    //   let pass = 'Bz8E$#@d';
-    //   expect(PassValidator.checkPassword(pass)).to.be.true;
-    // });
+    });
+    it('should contains a $ sign', function(){
+      let pass = 'Bz8E$#@d';
+      expect(PassValidator.checkCharacter(pass)).to.be.true;
+    });
+    it('should contains a # sign', function(){
+      let pass = 'Bz8E$#@d';
+      expect(PassValidator.checkCharacter(pass)).to.be.true;
+    });
+    it('should contains a @ sign', function(){
+      let pass = 'Bz8E$#@d';
+      expect(PassValidator.checkCharacter(pass)).to.be.true;
+    });
+    it('should contains at least 1 number, 1 letter in lowercase, 1 letter in uppercase', function(){
+      let pass = '8zBz8E$#@d';
+      expect(PassValidator.checkPass(pass)).to.be.true;
+    });
+    it('should contains at least 1 number, 1 letter in lowercase, 1 letter in uppercase and length should be between 6 and 16', function(){
+      let pass = '8zBz8E$#@d';
+      expect(PassValidator.checkFullPass(pass)).to.be.true;
+    });
   });
 });
