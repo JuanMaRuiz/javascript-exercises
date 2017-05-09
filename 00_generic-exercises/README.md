@@ -1,4 +1,4 @@
-#Check for Palindromes
+# 00 - Check for Palindromes
 Return ```true``` if the given string is a palindrome. Otherwise, return ```false```.
 
 A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.
@@ -24,3 +24,17 @@ List of tests
 * palindrome("1 eye for of 1 eye.") should return false.
 * palindrome("0_0 (: /-\ :) 0-0") should return true.
 * palindrome("five|\_/|four") should return false.
+
+# 01 - Find the Longest Word in a String
+Return the length of the longest word in the provided sentence.
+
+Your response should be a number.
+
+*List of tests*
+
+* ```findLongestWord("The quick brown fox jumped over the lazy dog")``` should return a number.
+* ```findLongestWord("The quick brown fox jumped over the lazy dog")``` should return 6.
+* ```findLongestWord("May the force be with you")``` should return 5.
+* ```findLongestWord("Google do a barrel roll")``` should return 6.
+* ```findLongestWord("What is the average airspeed velocity of an unladen swallow")``` should return 8.
+* ```findLongestWord("What if we try a super-long word such as otorhinolaryngology")``` should return 19.
