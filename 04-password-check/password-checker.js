@@ -1,5 +1,3 @@
-// TODO use string.search();
-
 'use strict';
 
 module.exports.checkCase = function(pass) {
