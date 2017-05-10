@@ -1,6 +1,5 @@
 [![Build Status](https://travis-ci.org/JuanMaRuiz/javascript-exercises.png?branch=master)](https://travis-ci.org/
 JuanMaRuiz/javascript-exercises)
-[![Coverage Status](https://coveralls.io/repos/juanmaruiz/git+https://github.com/JuanMaRuiz/javascript-exercises.git/badge.svg?branch=master)](https://coveralls.io/r/juanmaruiz/git+https://github.com/JuanMaRuiz/javascript-exercises.git?branch=master)
 [![Build Status](https://david-dm.org/JuanMaRuiz/javascript-exercises.svg)](https://travis-ci.org/JuanMaRuiz/javascript-exercises)
 Javascript Exercises
 ====================
