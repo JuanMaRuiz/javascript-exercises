@@ -4,7 +4,8 @@
   "description": "Javascript exercises for fun and learn some things",
   "main": "index.js",
   "scripts": {
-    "test": "mocha && node node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha test/*-test.js"
+    "test": "mocha && node node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha test/*-test.js",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
   "repository": {
     "type": "git",
