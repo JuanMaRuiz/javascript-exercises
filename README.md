@@ -1,7 +1,6 @@
 [![Build Status](https://travis-ci.org/JuanMaRuiz/javascript-exercises.png?branch=master)](https://travis-ci.org/JuanMaRuiz/javascript-exercises)
 [![Build Status](https://david-dm.org/JuanMaRuiz/javascript-exercises.svg)](https://travis-ci.org/JuanMaRuiz/javascript-exercises)
-[![Coverage Status](https://coveralls.io/repos/github/JuanMaRuiz/javascript-exercises/badge.svg?branch=master)](https://coveralls.io/github/JuanMaRuiz/javascript-exercises?branch=master)
-
+[![codecov](https://codecov.io/gh/JuanMaRuiz/javascript-exercises/branch/master/graph/badge.svg)](https://codecov.io/gh/JuanMaRuiz/javascript-exercises)
 Javascript Exercises
 ====================
 
