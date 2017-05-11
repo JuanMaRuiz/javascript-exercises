@@ -4,7 +4,7 @@
   "description": "Javascript exercises for fun and learn some things",
   "main": "index.js",
   "scripts": {
-    "test": "mocha && node node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha test/*-test.js",
+    "test": "mocha && node node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha test/*-test.js -- -R spec",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
   "repository": {
@@ -23,6 +23,7 @@
   "homepage": "https://github.com/JuanMaRuiz/javascript-exercises#readme",
   "devDependencies": {
     "chai": "^3.5.0",
+    "codecov": "^2.2.0",
     "istanbul": "^0.4.5",
     "mocha": "^3.2.0"
   }
