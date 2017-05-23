@@ -38,3 +38,15 @@ Your response should be a number.
 * ```findLongestWord("Google do a barrel roll")``` should return 6.
 * ```findLongestWord("What is the average airspeed velocity of an unladen swallow")``` should return 8.
 * ```findLongestWord("What if we try a super-long word such as otorhinolaryngology")``` should return 19.
+
+# 02 - Title Case a Sentence
+Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case.
+
+For the purpose of this exercise, you should also capitalize connecting words like "the" and "of".
+
+*List of tests*
+
+* ```titleCase("I'm a little tea pot")``` should return a ```string```.
+* ```titleCase("I'm a little tea pot")``` should return ```"I'm A Little Tea Pot"```.
+* ```titleCase("sHoRt AnD sToUt")``` should return ```"Short And Stout"```.
+* ```titleCase("HERE IS MY HANDLE HERE IS MY SPOUT")``` should return ```"Here Is My Handle Here Is My Spout"```.
