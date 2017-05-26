@@ -2,10 +2,16 @@
 
 module.exports.convertToTitleCase = function(str) {
     let convertedString = [];
-    str.split(" ").forEach(function(value) {
+    let stringToArr = str.split(" ");
+
+    stringToArr.forEach(function(value) {
         let word = value,
-            firstLetter = value.charAt(0);
+            firstLetter = value.charAt(0),
+            restOfWord = value.substr(1, (value.length - 1));
+
         word = word.replace(firstLetter, firstLetter.toUpperCase());
+        word = word.replace(restOfWord, restOfWord.toLowerCase());
+
         convertedString.push(word);
     });
 
