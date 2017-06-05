@@ -1,10 +1,21 @@
 'use strict';
 
-module.exports.largestOfFour = function(givenArr) {
+function getMaxOfArray(numArray) {
+  return Math.max.apply(null, numArray);
+}
 
-    for(let i = 0; i < givenArr; i++) {
-     console.log("givenArr[i]: ", givenArr[i]);
+const largestOfFour = function(givenArr) {
+let newArr = [];
 
+    for(let i = 0; i < givenArr.length; i++) {
+        const maxValInArray = getMaxOfArray(givenArr[i]);
+        newArr.push(maxValInArray);
     }
-    return givenArr;
+    console.log("newArr: ", newArr);
+    console.log("newArr: ", typeof newArr);
+    return newArr;
+}
+
+module.exports = {
+    largestOfFour: largestOfFour
 }
