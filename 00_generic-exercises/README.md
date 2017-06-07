@@ -54,14 +54,38 @@ For the purpose of this exercise, you should also capitalize connecting words li
 # 03 - Return Largest Numbers in Arrays
 Return an array consisting of the largest number from each provided sub-array. For simplicity, the provided array will contain exactly 4 sub-arrays.
 
-For the purpose of this exercise, you should also capitalize connecting words like "the" and "of".
-
 *List of tests*
-
- should return an array.
- should return [27,5,39,1001].
- should return [9, 35, 97, 1000000].
 
 * ```largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]])``` should return an ```array```.
 * ```largestOfFour([[13, 27, 18, 26], [4, 5, 1, 3], [32, 35, 37, 39], [1000, 1001, 857, 1]])``` should return ```[27,5,39,1001]```.
 * ```largestOfFour([[4, 9, 1, 3], [13, 35, 18, 26], [32, 35, 97, 39], [1000000, 1001, 857, 1]])``` should return ```[9, 35, 97, 1000000]```.
+
+# 04 - Confirm the Ending
+Check if a string (first argument, ```str```) ends with the given target string (second argument, target).
+
+*List of tests*
+
+* ```confirmEnding("Bastian", "n")``` should return ```true```.
+* ```confirmEnding("Connor", "n")``` should return ```false```.
+* ```confirmEnding("Walking on water and developing software from a specification are easy if both are frozen", "specification")``` should return ```false```.
+* ```confirmEnding("He has to give me a new name", "name")``` should return ```true```.
+* ```confirmEnding("Open sesame", "same")``` should return ```true```.
+* ```confirmEnding("Open sesame", "pen")``` should return ```false```.
+* ```confirmEnding("If you want to save our world, you must hurry. We dont know how much longer we can withstand the nothing", "mountain")``` should return ```false```.
+* Do not use the built-in method .endsWith() to solve the challenge.
+* confirmEnding("Bastian", "n") should return true.
+* confirmEnding("Connor", "n") should return false.
+* confirmEnding("Walking on water and developing software from a specification are easy if both are frozen", "specification") should return false.
+* confirmEnding("He has to give me a new name", "name") should return true.
+* confirmEnding("Open sesame", "same") should return true.
+* confirmEnding("Open sesame", "pen") should return false.
+* confirmEnding("If you want to save our world, you must hurry. We dont know how much longer we can withstand the nothing", "mountain") should return false.
+* Do not use the built-in method .endsWith() to solve the challenge..
+* confirmEnding("Bastian", "n") should return true.
+* confirmEnding("Connor", "n") should return false.
+* confirmEnding("Walking on water and developing software from a specification are easy if both are frozen", "specification") should return false.
+* confirmEnding("He has to give me a new name", "name") should return true.
+* confirmEnding("Open sesame", "same") should return true.
+* confirmEnding("Open sesame", "pen") should return false.
+* confirmEnding("If you want to save our world, you must hurry. We dont know how much longer we can withstand the nothing", "mountain") should return false.
+* Do not use the built-in method .endsWith() to solve the challenge..

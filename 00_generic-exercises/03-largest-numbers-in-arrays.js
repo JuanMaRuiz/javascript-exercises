@@ -11,10 +11,8 @@ let newArr = [];
         const maxValInArray = getMaxOfArray(givenArr[i]);
         newArr.push(maxValInArray);
     }
-    console.log("newArr: ", newArr);
-    console.log("newArr: ", typeof newArr);
     return newArr;
-}
+};
 
 module.exports = {
     largestOfFour: largestOfFour
