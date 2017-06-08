@@ -73,3 +73,15 @@ Check if a string (first argument, ```str```) ends with the given target string 
 * ```confirmEnding("Open sesame", "pen")``` should return ```false```.
 * ```confirmEnding("If you want to save our world, you must hurry. We dont know how much longer we can withstand the nothing", "mountain")``` should return ```false```.
 * Do not use the built-in method .endsWith() to solve the challenge.
+
+# 05 - Repeat a string repeat a string
+Repeat a given string (first argument) num times (second argument). Return an empty string if num is not a positive number.
+
+*List of tests*
+
+* ```repeatStringNumTimes("*", 3)``` should return ```***```.
+* ```repeatStringNumTimes("abc", 3)``` should return ```abcabcabc```.
+* ```repeatStringNumTimes("abc", 4)``` should return "abcabcab```abc```.
+* ```repeatStringNumTimes("abc", 1)``` should return ```abc```.
+* ```repeatStringNumTimes("*", 8)``` should return ```********```.
+* ```repeatStringNumTimes("abc", -2)``` should retun ```""```.
