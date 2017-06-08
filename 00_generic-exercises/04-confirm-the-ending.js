@@ -1,17 +1,11 @@
 'use strict';
 
 const checkEndOfTheWord = function(str, target) {
-    let lastStr;
+    const targetLength = target.length;
+    const endOfString = str.substring(str.length - targetLength);
 
-    if(str.indexOf(" ") !== -1) {
-        const strToArr = str.split(" ");
-        lastStr = strToArr[strToArr.length - 1];
-        return lastStr  === target;
-    } else {
-        lastStr = str.length - 1;
-        return str.charAt(lastStr)  === target;
-    }
-}
+    return endOfString === target;
+};
 
 module.exports = {
     checkEndOfTheWord: checkEndOfTheWord
