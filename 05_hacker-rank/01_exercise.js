@@ -3,15 +3,17 @@
 module.exports.maxiumumToys = function(prices, k) {
     // Complete this function
     let amount = k;
-    let toysToBuy = 0;
+    let toysToBuy = [];
 
-    prices.forEach((price) => {
-        console.log("price: ", price);
-        console.log("amount: ", amount);
+    prices.forEach(removeBoughtItem);
+
+    function removeBoughtItem(price, index) {
         if(price < amount) {
             amount = amount - price;
-            ++toysToBuy;
+            toysToBuy.push(price);
         }
-    })
-    return toysToBuy;
-}
+    }
+
+
+    return toysToBuy.length;
+};
