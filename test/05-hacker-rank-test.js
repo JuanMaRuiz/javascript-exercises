@@ -20,5 +20,12 @@ describe('Mark and Toys', () => {
             const amount = 50;
             expect(maxNumberOfToys.maxiumumToys(prices, amount)).to.be.equal(4);
         });
+
+        it("should return 2 toys", () => {
+            const prices = ["1000", "102", "35", "111", "200", "1", "1230"];
+            const numOfToys = 7;
+            const amount = 50;
+            expect(maxNumberOfToys.maxiumumToys(prices, amount)).to.be.equal(2);
+        });
     });
 });
