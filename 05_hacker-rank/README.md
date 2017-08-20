@@ -39,9 +39,9 @@ Your task is to find their comparison points by comparing:
 
 * If ```a[i] > b[i]```, then Alice is awarded  point.
 
-* If ```a[i] > b[i]```, then Bob is awarded  point.
+* If ```a[i] < b[i]```, then Bob is awarded  point.
 
-* If ```a[i] > b[i]```, then neither person receives a point.
+* If ```a[i] = b[i]```, then neither person receives a point.
 
 Comparison points is the total points a person earned.
 
