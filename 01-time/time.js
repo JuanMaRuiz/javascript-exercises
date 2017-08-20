@@ -30,10 +30,7 @@ module.exports.getTime = function() {
 }
 
 function parseTime(data) {
-    if(data < 10) {
-        return '0'.concat(data);
-    }
-    return data;
+    return (data < 10) ? '0'.concat(data) : data;
 }
 
 /*
