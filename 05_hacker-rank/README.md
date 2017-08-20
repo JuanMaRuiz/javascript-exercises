@@ -35,23 +35,25 @@ Alice and Bob each created one problem for HackerRank. A reviewer rates the two 
 
 We define the rating for Alice's challenge to be the triplet , and the rating for Bob's challenge to be the triplet .
 
-Your task is to find their comparison points by comparing  with ,  with , and  with .
+Your task is to find their comparison points by comparing:
 
-* If a[i] > b[i], then Alice is awarded  point.
+* If ```a[i] > b[i]```, then Alice is awarded  point.
 
-* If a[i] > b[i], then Bob is awarded  point.
+* If ```a[i] > b[i]```, then Bob is awarded  point.
 
-* If a[i] > b[i], then neither person receives a point.
+* If ```a[i] > b[i]```, then neither person receives a point.
 
 Comparison points is the total points a person earned.
 
 Given  and , can you compare the two challenges and print their respective comparison points?
 
+
 ### Input Format
 
-The first line contains 3 space-separated integers a[0], a[1], and a[2], describing the respective values in triplet .
+The first line contains 3 space-separated integers ```a[0], a[1], and a[2]```, describing the respective values in triplet .
 
-The second line contains 3 space-separated integers, b[0], b[1], and b[2], describing the respective values in triplet .
+The second line contains 3 space-separated integers, ```b[0], b[1], and b[2]```, describing the respective values in triplet .
+
 
 ### Sample Input
 ```
