@@ -13,16 +13,13 @@ module.exports.checkFormattedTime = function (time) {
 module.exports.getTime = function() {
     let time = [];
     const now = new Date(),
-          hours = now.getUTCHours(),
           minutes = now.getUTCMinutes(),
           seconds = now.getUTCSeconds();
+    let hours = now.getUTCHours();
 
-    if(hours > 12) {
-        time.push(hours - 12 + ' PM');
-    } else {
-        time.push(hours + ' AM');
-    }
+    hours = (hours > 12) ? hours - 12 + ' PM' : hours + ' AM'
 
+    time.push(hours);
     time.push(parseTime(minutes));
     time.push(parseTime(seconds));
 
