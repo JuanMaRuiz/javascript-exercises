@@ -45,10 +45,9 @@ Your task is to find their comparison points by comparing:
 
 Comparison points is the total points a person earned.
 
-Given  and , can you compare the two challenges and print their respective comparison points?
+Given ```A``` and ```B```, can you compare the two challenges and print their respective comparison points?
 
-
-### Input Format
+### Input Format
 
 The first line contains 3 space-separated integers ```a[0], a[1], and a[2]```, describing the respective values in triplet .
 
