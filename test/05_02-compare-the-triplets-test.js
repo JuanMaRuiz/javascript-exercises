@@ -10,7 +10,17 @@ describe('Compare the Triplets', () => {
         it('should return 1 1', () => {
             const aliceRating = [5, 6, 7];
             const bobRating = [3, 6, 10];
-            expect(Triplets.checkTriplets(aliceRating, bobRating)).to.be.true;
+            expect(Triplets.checkTriplets(aliceRating, bobRating)).to.equal('1 1');
+        });
+        it('should return 2 1', () => {
+            const aliceRating = [5, 6, 7];
+            const bobRating = [3, 1, 10];
+            expect(Triplets.checkTriplets(aliceRating, bobRating)).to.equal('2 1');
+        });
+        it('should return 0 3', () => {
+            const aliceRating = [1, 0, 5];
+            const bobRating = [3, 1, 10];
+            expect(Triplets.checkTriplets(aliceRating, bobRating)).to.equal('0 3');
         });
     });
 });
