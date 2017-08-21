@@ -22,5 +22,10 @@ describe('Compare the Triplets', () => {
             const bobRating = [3, 1, 10];
             expect(Triplets.checkTriplets(aliceRating, bobRating)).to.equal('0 3');
         });
+        it('should return 3 0', () => {
+            const aliceRating = [3, 1, 10];
+            const bobRating = [1, 0, 5];
+            expect(Triplets.checkTriplets(aliceRating, bobRating)).to.equal('3 0');
+        });
     });
 });
