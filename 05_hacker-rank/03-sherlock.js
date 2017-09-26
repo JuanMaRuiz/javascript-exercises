@@ -1,7 +1,13 @@
 'use strict';
 
 module.exports.checkStr = function (str) {
-    const regExp = /[a-z]/;
+    const strToArr = str.split(''),
+          i = 0;
+          max = strToArr.length;
 
-    return "hello";
+    for ( ; i < max; i +=1 ) {
+
+    }
+
+    return strToArr;
 }
