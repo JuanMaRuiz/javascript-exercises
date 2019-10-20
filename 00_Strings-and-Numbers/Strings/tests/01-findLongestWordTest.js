@@ -4,7 +4,7 @@ const chai = require('chai');
 const expect = chai.expect;
 const assert = chai.assert;
 
-const checkWords = require('./../00_generic-exercises/01-findLongestWord');
+const checkWords = require('../01-findLongestWord');
 
 describe('Find the longest word', function() {
     describe('Return the length of the longest word in the provided sentence.', function() {

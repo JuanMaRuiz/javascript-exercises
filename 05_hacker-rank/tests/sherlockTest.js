@@ -4,7 +4,7 @@ const assert = require('assert');
 const chai = require('chai');
 const expect = chai.expect;
 
-const sherlock = require('../05_hacker-rank/03-sherlock');
+const sherlock = require('../sherlock');
 
 describe('Sherlock and the Valid String', () => {
     // describe('Given string "aabbcd" has a valid frecuency', () => {

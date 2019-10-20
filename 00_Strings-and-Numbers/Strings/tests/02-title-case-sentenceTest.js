@@ -4,7 +4,7 @@ const chai = require('chai');
 const expect = chai.expect;
 const assert = chai.assert;
 
-const titleCaseChecker = require('./../00_generic-exercises/02-title-case-sentence');
+const titleCaseChecker = require('../02-title-case-sentence');
 
 describe("Title Case a Sentence", function() {
     describe("Return the provided string with the first letter of each word capitalized", function() {

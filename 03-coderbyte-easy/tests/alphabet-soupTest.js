@@ -5,7 +5,7 @@ const assert = require('assert'),
       expect = chai.expect;
 
 // Test modules
-const Alphabet = require('./../03-coderbyte-easy/alphabet-soup');
+const Alphabet = require('../alphabet-soup');
 describe('Alphabet soup', function() {
   describe('Write a function which  take the str string parameter being passed and return the string with the letters in alphabetical order', function() {
     let strings = [

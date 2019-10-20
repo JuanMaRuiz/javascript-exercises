@@ -1,30 +1,28 @@
-'use strict';
-
-module.exports.checkCase = function(pass) {
+const checkCase = (pass) => {
   const regExpCase = /([a-z]{1,}[A-Z]{1,})|([A-Z]{1,}[a-z]{1,})/;
 
   return checkRegExp(pass, regExpCase);
 };
 
-module.exports.checkNumber = function(pass) {
+const checkNumber = (pass) => {
   const regExpNumber = /[0-9]{1,}/;
 
   return checkRegExp(pass, regExpNumber);
 };
 
-module.exports.checkCharacter = function(pass) {
+const checkCharacter = (pass) => {
   const regExpHash = /[$#@]{1,}/;
 
   return checkRegExp(pass, regExpHash);
 };
 
-module.exports.checkPass = function(pass) {
+const checkPass = (pass) => {
     const passRegExp = /[0-9]{1,}[a-z]{1,}[A-Z]{1,}/;
 
     return checkRegExp(pass, passRegExp);
 };
 
-module.exports.checkFullPass = function(pass) {
+const checkFullPass = (pass) => {
     const regExpArr = [/\d{1,}/, /[a-z]{1,}/, /[a-z]{1,}/, /([$]{1,})|([#]{1,})|([@]{1,})/],
         passLength = pass.length >= 6 && pass.length <= 16;
     let results = [];
@@ -38,10 +36,20 @@ module.exports.checkFullPass = function(pass) {
     }).length === 0;
 };
 
-module.exports.checkLength = function(pass) {
+const checkLength = (pass) => {
   return pass.length >= 6 && pass.length <= 16;
 };
 
 function checkRegExp(text, regExp) {
     return regExp.test(text);
+}
+
+
+module.exports = {
+    checkCase,
+    checkNumber,
+    checkCharacter,
+    checkPass,
+    checkFullPass,
+    checkLength,
 }

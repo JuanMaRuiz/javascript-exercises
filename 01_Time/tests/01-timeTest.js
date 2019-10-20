@@ -1,12 +1,11 @@
 // Core dependencies
 const assert = require('assert');
-const chai = require('chai');
-const expect = chai.expect;
+const { expect } = require('chai');
 
 // Test dependencies
-const timeOne = require('./../01-time/time');
+const timeOne = require('../time');
 
-describe('Basic JS tests', function() {
+describe('01 Time', function() {
   describe('Write a JavaScript program to display the current time in the following format', function() {
     it('should return the current time with this format: 4 PM : 50 : 22', function() {
     var time = timeOne.getTime();

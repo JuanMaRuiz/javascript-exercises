@@ -3,7 +3,7 @@
 const chai = require('chai');
 const expect = chai.expect;
 
-const maxNumberOfToys = require('./../05_hacker-rank/01_exercise');
+const maxNumberOfToys = require('./../exercise01');
 
 describe('Mark and Toys', () => {
     describe("Write a JavaScript program to test how many toys can buy for a given amount", () => {
