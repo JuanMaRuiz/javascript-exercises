@@ -1,6 +1,6 @@
 const { expect } = require('chai');
 
-const getResult = require('../first-factorial');
+const { getFactorial } = require('../first-factorial');
 
 describe('Frist Factorial', function () {
     describe('Write a  function FirstFactorial(num) take the num parameter being passed and return the factorial of it', function () {
@@ -14,9 +14,9 @@ describe('Frist Factorial', function () {
                 expected: 40320
             }
         ];
-        numbers.forEach(function (num) {
-            it('it should return: ' + num.expected + ' when the function receive: ' + num.original, function () {
-                expect(getResult.getFactorial(num.original)).to.be.equal(num.expected);
+        it('it should return: the factorial of the number passed as parameter', () => {
+            numbers.map( num => {
+                expect(getFactorial(num.original)).to.be.equal(num.expected);
             });
         });
     });
