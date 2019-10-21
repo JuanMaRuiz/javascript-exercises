@@ -1,10 +1,7 @@
 'use strict';
 // Core dependencies
-const assert = require('assert'),
-      chai = require('chai'),
-      expect = chai.expect;
+const { expect } = require('chai');
 
-// Test modules
 const PassValidator = require('../password-checker');
 
 describe('Password Checker', function(){

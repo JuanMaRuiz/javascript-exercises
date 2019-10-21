@@ -1,7 +1,4 @@
-'use strict';
-// Core dependencies
-const chai = require('chai');
-const expect = chai.expect;
+const { expect } = require('chai');
 
 const maxNumberOfToys = require('./../exercise01');
 

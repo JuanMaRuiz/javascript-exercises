@@ -1,8 +1,4 @@
-'use strict';
-// Core dependencies
-const assert = require('assert'),
-      chai = require('chai'),
-      expect = chai.expect;
+const { expect } = require('chai');
 
 // Test modules
 const Alphabet = require('../alphabet-soup');

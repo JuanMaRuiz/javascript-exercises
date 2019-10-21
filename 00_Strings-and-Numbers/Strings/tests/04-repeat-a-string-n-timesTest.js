@@ -1,7 +1,4 @@
-'use strict';
-const chai = require('chai');
-const expect = chai.expect;
-const assert = chai.assert;
+const { expect } = require('chai');
 
 const repeatStrings = require('../04-repeat-a-string-n-times');
 

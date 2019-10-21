@@ -1,8 +1,4 @@
-'use strict';
-
-const chai = require('chai');
-const expect = chai.expect;
-const assert = chai.assert;
+const { expect, assert } = require('chai');
 
 const stringsExercises = require('../00-palindrome');
 

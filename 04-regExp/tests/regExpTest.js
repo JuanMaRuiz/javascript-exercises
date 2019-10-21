@@ -1,8 +1,4 @@
-'use strict';
-// Core dependencies
-const assert = require('assert');
-const chai = require('chai');
-const expect = chai.expect;
+const { expect } = require('chai');
 
 const regExp = require('../regExp');
 
@@ -31,6 +27,7 @@ describe('Validation with regular expression', function() {
             expect(regExp.checkCreditCardFormat(creditCard)).to.equal("The credit card number is NOT correct");
         })
     });
+    // TODO: e-mail address tests
     // describe('Write a pattern that matches e-mail addresses.', function() {
 
     //     it('should return: "The email card number is correct"', function() {

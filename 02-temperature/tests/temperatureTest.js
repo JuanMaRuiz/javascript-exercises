@@ -1,10 +1,7 @@
 'use strict';
 // Core dependencies
-const assert = require('assert'),
-      chai = require('chai'),
-      expect = chai.expect;
+const { expect } = require('chai');
 
-// Test dependencies
 const Temperature = require('../temperature');
 
 // More examples http://www.rapidtables.com/convert/temperature/how-celsius-to-fahrenheit.htm

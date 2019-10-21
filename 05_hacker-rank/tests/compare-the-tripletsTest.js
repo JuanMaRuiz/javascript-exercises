@@ -1,7 +1,5 @@
-'use strict';
 // Core dependencies
-const chai = require('chai');
-const expect = chai.expect;
+const { expect } = require('chai');
 
 const Triplets = require('../compare-the-triplets');
 

@@ -1,6 +1,5 @@
 const { expect } = require('chai');
 
-// Test modules
 const StringsFn = require('../string-reverse');
 
 describe('First reverse', function(){

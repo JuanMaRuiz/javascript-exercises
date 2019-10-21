@@ -1,8 +1,4 @@
-'use strict';
-
-const chai = require('chai');
-const expect = chai.expect;
-const assert = chai.assert;
+const { expect } = require('chai');
 
 const titleCaseChecker = require('../02-title-case-sentence');
 
