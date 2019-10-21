@@ -1,9 +1,9 @@
 const { expect } = require('chai');
 
 // Test modules
-const Alphabet = require('../alphabet-soup');
+const { orderString } = require('../alphabet-soup');
 describe('Alphabet soup', function() {
-  describe('Write a function which  take the str string parameter being passed and return the string with the letters in alphabetical order', function() {
+  describe('Write a function which takes the str string parameter being passed and return the string with the letters in alphabetical order', () => {
     let strings = [
       {
         original: "coderbyte",
@@ -14,10 +14,10 @@ describe('Alphabet soup', function() {
         expected: "ahhloop"
       }
     ]
-    strings.forEach(function(str) {
-      it('should return "' + str.expected + '" when test passed is "' + str.original + '"', function() {
-        expect(Alphabet.orderString(str.original)).to.be.equal(str.expected);
-      });
+    it('should return the string with the letters in alphabetical order', () => {
+        strings.map((str) => {
+            expect(orderString(str.original)).to.be.equal(str.expected);
+        });
     });
   });
 });

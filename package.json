@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha ./**/tests/**Test.js ./**/**/tests/**Test.js",
-    "testcoverage": "mocha && node node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha ./**/test/*-test.js",
+    "coverage": "nyc npm run test",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
   "repository": {
@@ -24,7 +24,7 @@
   "homepage": "https://github.com/JuanMaRuiz/javascript-exercises#readme",
   "devDependencies": {
     "chai": "^4.2.0",
-    "istanbul": "^0.4.5",
-    "mocha": "^6.2.2"
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1"
   }
 }
