@@ -1,9 +1,6 @@
-'use strict';
-const chai = require('chai');
-const expect = chai.expect;
-const assert = chai.assert;
+const { expect } = require('chai');
 
-const repeatStrings = require('./../00_generic-exercises/05-repeat-a-string');
+const repeatStrings = require('../04-repeat-a-string-n-times');
 
 describe('Repeat a string', function(){
     it('repeatStringNumTimes("*", 3) should return "***"', function(){

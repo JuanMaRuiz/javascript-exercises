@@ -1,6 +1,1 @@
-'use strict';
-
-module.exports.orderString = function(str) {
-  var arr = str.split('');
-  return arr.sort().join('');
-};
+module.exports.orderString = (str) => str.split('').sort().join('');
