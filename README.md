@@ -12,46 +12,17 @@ I've extracted the exercises from:
 -   https://coderbyte.com/challenges
 -   http://www.w3resource.com/javascript-exercises/
 
+### Exercises and katas
+
+* [String and Numbers](./00_Strings-and-Numbers/README.md)
+* [Time](./01_Time/README.md)
+* [Temperature](./02_temperature/README.md)
+* [Coderbyte](./03_coderbyte-easy/README.md)
+* [Password check](./04-password-check/README.md)
+* [Hacker rank](./05-hacker-rank/README.md)
+* [String finder](./06-string-finder/README.md)
+* [AdventJS](./07-adventjs/README.md)
+
 ### TODO
 
--   More exercises [here](http://www.w3resource.com/javascript-exercises/javascript-functions-exercises.php)
-
-### Project structure
-
-```
-.
-│
-├── test                     # Unit tests files (`.test.js`)
-│     └── file.name.testjs
-├── 01-{name}                # JS Modules -> solutions
-│     └── README.md          # Exercise explanation
-│     └── {module-name}.js   # Exercise implementation
-│
-├─ .editorconfig
-├─ .gitignore
-├─ package.json
-├─ README.md
-```
-
-### How to run tests
-
--   Download the project
--   Download dependencies `npm install`
--   Run tests `npm test`
-
-If you want to launch a single test you can use two approaches:
-
-_Using `npm test`_
-
-For passing params to `npm test` script you need to execute the script with `run` and pass params to script test. This is the pattern to use:
-
-```
-$ npm run test -- --grep=<test to launch>
-```
-
-_Using `mocha` directly_
-
-You only need to add the `grep` flag and put in quotes the test you want to execute. Example:
-`mocha --grep 'test to launch'`
-
-> Remember to put your 'test to launch' between quotes if it has not a single word as a name.
+[] Add more exercises from [here](http://www.w3resource.com/javascript-exercises/javascript-functions-exercises.php)

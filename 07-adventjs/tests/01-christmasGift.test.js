@@ -1,6 +1,6 @@
 const { expect } = require('chai');
 
-const wrapping = require('../wrapping.js');
+const wrapping = require('../01-christmasGift.js');
 
 describe('Challenge #1: Automating Christmas gift wrapping!', () => {
     it('wrapping(gifts)', () => {
