@@ -1,6 +1,10 @@
-
 module.exports.palindrome = function (str) {
-  const sanitizedStr = str.replace(/\s/g,'').replace(/[\W_]+/g, '').toLowerCase();
-  const reversedStr = sanitizedStr.split('').reverse().join('');
-  return sanitizedStr === reversedStr;
+    if (typeof str !== 'string') {
+        throw new Error(`You should pass a string but passed ${typeof str}`);
+    }
+    const sanitizedStr = str
+        .toLowerCase()
+        .replaceAll(new RegExp(/\W|_|\s/, 'gi'), '');
+
+    return sanitizedStr === sanitizedStr.split('').reverse().join('');
 }

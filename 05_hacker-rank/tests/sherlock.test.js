@@ -1,6 +1,6 @@
-const chai = require('chai');
+const chai = require('chai')
 
-const sherlock = require('../sherlock');
+const sherlock = require('../sherlock')
 
 describe('Sherlock and the Valid String', () => {
     // describe('Given string "aabbcd" has a valid frecuency', () => {
@@ -9,4 +9,4 @@ describe('Sherlock and the Valid String', () => {
     //         expect(sherlock.checkStr(str)).to.equal('NO');
     //     });
     // });
-});
+})

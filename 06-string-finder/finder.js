@@ -1,5 +1,5 @@
-const wordMatcher = function(str, words) {
-    return "Bazinga";
+const wordMatcher = function (str, words) {
+    return 'Bazinga'
 }
 
-module.exports = wordMatcher;
+module.exports = wordMatcher
