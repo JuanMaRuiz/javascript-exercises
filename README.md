@@ -25,4 +25,7 @@ I've extracted the exercises from:
 
 ### TODO
 
-[] Add more exercises from [here](http://www.w3resource.com/javascript-exercises/javascript-functions-exercises.php)
+[ ] Add all katas from AdventJS
+[ ] Add husky to run linter before commit
+[ ] Add commitlint
+[ ] Add more exercises from [here](http://www.w3resource.com/javascript-exercises/javascript-functions-exercises.php)
