@@ -19,3 +19,14 @@
 +  +
 ++++
 ```
+
+# Smaller missing positive
+
+Given an array `nums` of no ordered integers, write a function that return the lower positive integer that is missing.
+
+Example:
+
+```
+Given this array [8, -9, 1000, 3, 10]
+function should return integer 2
+```
